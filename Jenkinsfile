@@ -1,4 +1,3 @@
-#(node { 
 #    stage('Clone') {
 #	git 'https://github.com/Wizhb/project-alphorm.git'
  #   }
@@ -8,7 +7,6 @@
 #    stage('Run') {
 #    sh 'java Main'
 #    }
-#})
 node {
     stage('Clone') {
         git branch: 'main', url: 'https://github.com/Wizhb/project-alphorm.git'
